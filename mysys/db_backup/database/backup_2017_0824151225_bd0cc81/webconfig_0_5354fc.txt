@@ -1,0 +1,11 @@
+INSERT INTO `webconfig` VALUES('cfg_webname','深圳金帆纺织','0','string','深圳金帆纺织','1');
+INSERT INTO `webconfig` VALUES('cfg_weburl','网站地址','0','string','http://localhost/','2');
+INSERT INTO `webconfig` VALUES('cfg_webpath','网站目录','0','string','网站目录','3');
+INSERT INTO `webconfig` VALUES('cfg_author','技术支持','0','string','星想互联','4');
+INSERT INTO `webconfig` VALUES('cfg_generator','程序引擎','0','string','PHPMyWind CMS','5');
+INSERT INTO `webconfig` VALUES('cfg_keyword','关键字','0','string','深圳金帆纺织','6');
+INSERT INTO `webconfig` VALUES('cfg_description','网站描述','0','bstring','深圳金帆纺织','7');
+INSERT INTO `webconfig` VALUES('cfg_tel','联系电话','0','string','086 - 0755-83207510','8');
+INSERT INTO `webconfig` VALUES('cfg_fax','公司传真','0','string','086 - 0755-83207512','9');
+INSERT INTO `webconfig` VALUES('cfg_email','公司邮箱','0','string','ZC413ZC@163.COM','10');
+INSERT INTO `webconfig` VALUES('cfg_address','公司地址','0','string','深圳市福田区上梅林梅华路梅华一号四楼','11');

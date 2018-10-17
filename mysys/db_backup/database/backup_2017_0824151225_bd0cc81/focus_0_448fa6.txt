@@ -1,0 +1,2 @@
+INSERT INTO `focus` VALUES('1','大草原','/admin/kindeditor/attached/image/20170817/20170817105523_38135.jpg','','2017-08-17 18:55:25','Y','1');
+INSERT INTO `focus` VALUES('2','大草原','/admin/kindeditor/attached/image/20170818/20170818124524_80886.jpg','','2017-08-18 20:45:26','Y','1');

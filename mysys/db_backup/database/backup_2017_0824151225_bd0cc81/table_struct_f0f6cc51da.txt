@@ -1,0 +1,277 @@
+DROP TABLE IF EXISTS `admin`;
+
+CREATE TABLE `admin` (
+  `mid` int(4) NOT NULL AUTO_INCREMENT,
+  `adminname` char(20) NOT NULL,
+  `password` char(20) NOT NULL,
+  `passview` char(20) NOT NULL,
+  `fdate` date NOT NULL,
+  `sf` int(2) NOT NULL,
+  `flag` char(2) NOT NULL,
+  `loginip` char(20) NOT NULL,
+  `logindate` datetime NOT NULL,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `caselist`;
+
+CREATE TABLE `caselist` (
+  `cid` int(3) NOT NULL AUTO_INCREMENT,
+  `title` char(100) NOT NULL,
+  `cdate` datetime NOT NULL,
+  `picurl` char(100) NOT NULL,
+  `content` longtext NOT NULL,
+  `flag` char(2) NOT NULL,
+  PRIMARY KEY (`cid`),
+  KEY `cid` (`cid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `detailtype`;
+
+CREATE TABLE `detailtype` (
+  `detailid` int(11) NOT NULL AUTO_INCREMENT,
+  `typeid` int(11) DEFAULT NULL,
+  `detailname` char(60) DEFAULT NULL,
+  `ddate` datetime DEFAULT NULL,
+  `flag` char(6) DEFAULT NULL,
+  `url` longtext,
+  PRIMARY KEY (`detailid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `downloads`;
+
+CREATE TABLE `downloads` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` char(50) DEFAULT NULL,
+  `hit` int(11) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `flag` char(50) DEFAULT NULL,
+  `address` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `focus`;
+
+CREATE TABLE `focus` (
+  `fid` int(11) NOT NULL AUTO_INCREMENT,
+  `title` char(100) DEFAULT NULL,
+  `picurl` char(200) DEFAULT NULL,
+  `linkurl` char(200) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `flag` char(2) DEFAULT NULL,
+  `orderlist` int(2) DEFAULT '0',
+  PRIMARY KEY (`fid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `info`;
+
+CREATE TABLE `info` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `title` char(120) NOT NULL,
+  `content` longtext,
+  `typeid` int(6) DEFAULT NULL,
+  `detailid` int(6) DEFAULT NULL,
+  `fdate` datetime NOT NULL,
+  `hit` int(50) DEFAULT '0',
+  `biaoti` char(100) DEFAULT NULL,
+  `editdate` date DEFAULT NULL,
+  `author` char(36) DEFAULT NULL,
+  `editer` char(36) DEFAULT NULL,
+  `recommend` char(2) DEFAULT NULL,
+  `important` int(2) DEFAULT NULL,
+  `picurl` char(120) DEFAULT NULL,
+  `scroll` char(2) DEFAULT NULL,
+  `biaoge` char(2) DEFAULT NULL,
+  `flag` char(2) DEFAULT NULL,
+  `download` char(120) DEFAULT NULL,
+  `keywords` text,
+  `intro` text,
+  `link` char(50) DEFAULT NULL,
+  `editip` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `infotype`;
+
+CREATE TABLE `infotype` (
+  `typeid` int(11) NOT NULL AUTO_INCREMENT,
+  `typename` char(150) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `typepic` char(150) DEFAULT NULL,
+  `tag` char(150) DEFAULT NULL,
+  PRIMARY KEY (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `link`;
+
+CREATE TABLE `link` (
+  `lid` int(3) NOT NULL AUTO_INCREMENT,
+  `linkname` char(20) NOT NULL,
+  `url` char(200) NOT NULL,
+  `fdate` datetime NOT NULL,
+  `pr` int(2) NOT NULL,
+  `flag` char(2) NOT NULL,
+  PRIMARY KEY (`lid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `logininf`;
+
+CREATE TABLE `logininf` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `adminname` char(50) DEFAULT NULL,
+  `ipaddress` char(50) DEFAULT NULL,
+  `logindate` datetime DEFAULT NULL,
+  `exitdate` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `news`;
+
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` char(50) DEFAULT NULL,
+  `hit` int(11) DEFAULT NULL,
+  `biaoti` char(50) DEFAULT NULL,
+  `typeid` int(11) DEFAULT NULL,
+  `detailid` int(11) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `editdate` datetime DEFAULT NULL,
+  `author` char(100) DEFAULT NULL,
+  `editer` char(50) DEFAULT NULL,
+  `recommend` char(50) DEFAULT NULL,
+  `important` int(11) DEFAULT NULL,
+  `picurl` char(200) DEFAULT NULL,
+  `scroll` char(200) DEFAULT NULL,
+  `biaoge` char(50) DEFAULT NULL,
+  `flag` char(50) DEFAULT NULL,
+  `download` char(50) DEFAULT NULL,
+  `link` char(100) DEFAULT NULL,
+  `keywords` longtext,
+  `intro` longtext,
+  `content` longtext,
+  `editip` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `newspinglun`;
+
+CREATE TABLE `newspinglun` (
+  `pid` int(11) NOT NULL AUTO_INCREMENT,
+  `tid` int(11) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `user` char(50) DEFAULT NULL,
+  `flag` char(50) DEFAULT NULL,
+  `content` longtext,
+  PRIMARY KEY (`pid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `newstype`;
+
+CREATE TABLE `newstype` (
+  `typeid` int(11) NOT NULL AUTO_INCREMENT,
+  `typeurl` char(210) DEFAULT NULL,
+  `typename` char(150) DEFAULT NULL,
+  `ename` char(20) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `typepic` char(150) DEFAULT NULL,
+  `tag` char(150) DEFAULT NULL,
+  `orderlist` int(11) DEFAULT NULL,
+  PRIMARY KEY (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `photo`;
+
+CREATE TABLE `photo` (
+  `pid` int(11) NOT NULL AUTO_INCREMENT,
+  `title` char(50) DEFAULT NULL,
+  `hit` int(11) DEFAULT NULL,
+  `tid` int(11) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `shenghe` char(50) DEFAULT NULL,
+  `picurl` char(200) DEFAULT NULL,
+  `content` longtext,
+  PRIMARY KEY (`pid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `phototype`;
+
+CREATE TABLE `phototype` (
+  `typeid` int(11) NOT NULL AUTO_INCREMENT,
+  `typename` char(50) DEFAULT NULL,
+  PRIMARY KEY (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `product`;
+
+CREATE TABLE `product` (
+  `pid` int(11) NOT NULL AUTO_INCREMENT,
+  `title` char(50) DEFAULT NULL,
+  `hit` int(11) DEFAULT NULL,
+  `tid` int(11) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `shenghe` char(50) DEFAULT NULL,
+  `picurl` char(200) DEFAULT NULL,
+  `content` longtext,
+  PRIMARY KEY (`pid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `productype`;
+
+CREATE TABLE `productype` (
+  `typeid` int(11) NOT NULL AUTO_INCREMENT,
+  `typename` char(50) DEFAULT NULL,
+  `ename` char(50) DEFAULT NULL,
+  `typepic` char(255) DEFAULT NULL,
+  PRIMARY KEY (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `reply`;
+
+CREATE TABLE `reply` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `qid` int(11) DEFAULT NULL,
+  `hit` int(11) DEFAULT NULL,
+  `title` char(50) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `manger` char(50) DEFAULT NULL,
+  `content` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `topic`;
+
+CREATE TABLE `topic` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` char(50) DEFAULT NULL,
+  `fdate` datetime DEFAULT NULL,
+  `hit` int(11) DEFAULT NULL,
+  `ip` char(50) DEFAULT NULL,
+  `userName` char(50) DEFAULT NULL,
+  `flag` char(50) DEFAULT NULL,
+  `content` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` char(10) NOT NULL,
+  `pid` int(3) NOT NULL,
+  `fdate` datetime NOT NULL,
+  `flag` char(2) NOT NULL,
+  PRIMARY KEY (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `webconfig`;
+
+CREATE TABLE `webconfig` (
+  `varname` char(50) NOT NULL COMMENT '变量名称',
+  `varinfo` char(80) NOT NULL COMMENT '参数说明',
+  `vargroup` smallint(5) unsigned NOT NULL COMMENT '所属组',
+  `vartype` char(10) NOT NULL COMMENT '变量类型',
+  `varvalue` text NOT NULL COMMENT '变量值',
+  `orderid` smallint(5) unsigned NOT NULL COMMENT '排列排序',
+  PRIMARY KEY (`varname`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+

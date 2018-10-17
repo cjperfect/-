@@ -1,0 +1,12 @@
+INSERT INTO `caselist` VALUES('1','案例1','2017-07-23 21:00:00','uploads/news/p1.jpg','','');
+INSERT INTO `caselist` VALUES('2','案例2','2017-07-23 21:00:00','uploads/news/p2.jpg','','');
+INSERT INTO `caselist` VALUES('3','案例3','2017-07-23 21:00:00','uploads/news/p3.jpg','','');
+INSERT INTO `caselist` VALUES('4','案例4','2017-07-23 21:00:00','uploads/news/p4.jpg','','');
+INSERT INTO `caselist` VALUES('5','案例5','2017-07-23 21:00:00','uploads/news/p5.jpg','','');
+INSERT INTO `caselist` VALUES('6','案例6','2017-07-23 21:00:00','uploads/news/p6.jpg','','');
+INSERT INTO `caselist` VALUES('7','案例7','2017-07-23 21:00:00','uploads/news/p7.jpg','','');
+INSERT INTO `caselist` VALUES('8','案例8','2017-07-23 21:00:00','uploads/news/p8.jpg','','');
+INSERT INTO `caselist` VALUES('9','案例9','2017-07-23 21:00:00','uploads/news/p9.jpg','','');
+INSERT INTO `caselist` VALUES('10','案例10','2017-07-23 21:00:00','uploads/news/p10.jpg','','');
+INSERT INTO `caselist` VALUES('11','案例11','2017-07-23 21:00:00','uploads/news/p11.jpg','','');
+INSERT INTO `caselist` VALUES('12','案例12','2017-07-23 21:00:00','uploads/news/p12.jpg','','');

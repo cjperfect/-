@@ -1,0 +1,42 @@
+﻿/*=======================消除默认样式==========================*/
+*{padding:0px; margin:0px; font-family:"微软雅黑"}
+a{text-decoration:none;}
+li{list-style-type:none;}
+/*=======================导航==========================*/
+#nav{width:100%; position:absolute; left:0px; top:50px; z-index:10;}
+#nav .main{ width:1200px; margin:0 auto;}
+#nav .logo{width:280px; height:80px; float:left; background:url(../images/logo.png) no-repeat }
+#nav .list{ float:right; width:70%; margin-top:10px;}
+#nav .list ul{position:relative;}
+#nav .list .line{position:absolute; left:1%; top:30px;display:block; width:10%; height:2px; background:orange;}
+#nav .list li{ float:left; width:12%; height:30px; text-align:center;}
+#nav .list li a{color:white; transition:all 800ms}
+#nav .list li:hover a{color:orange;}
+/*=======================内容显示区域==========================*/
+#container{width:100%; margin-top:60px;}
+#container .main{width:1200px; margin:0 auto;}
+#container .main_left{width:75%; float:left;}
+#container .main_left .path{background:url(../images/topbarorder.gif) no-repeat left 4px; padding-left:20px}
+#container .main_left .path a{color:#333; font-size:12px;}
+#container .main_left .content h2{font-size:22px; font-weight:bold;padding:20px 0 20px 0;}
+#container .main_left .content p{color:#999; font-size:12px; padding-bottom:20px; border-bottom:1px solid #CCC;}
+#container .main_left .content div{padding-top:10px; font-size:15px; padding-bottom:50px;}
+#container .main_left .content a,#container .main_left .content span{padding:5px 0 5px 0; font-size:12px; color:#333; display:block}
+#container .main_right{width:22%; float:right;}
+#container .main_right h4{font-weight:bold; font-size:18px;height:35px; line-height:35px; background: #75603c; padding-left:10px}
+#container .main_right .ul1 li{ padding:10px 0 10px 0;}
+#container .main_right li{font-size:14px; padding-left:5px;}
+#container .main_right li a{color:#333}
+/*=======================底部==========================*/
+#footer{background: #393947; padding: 20px 0;  font-size:12px; clear:both }
+#footer .main_box{ position:relative; width:100%; margin:0 auto;}
+#footer .up{ height: 32px; padding-bottom: 15px; position: relative;}
+#fot_nav { float: left; padding-top: 5px;}
+#fot_nav a{ color:#aeaeb1;}
+#fot_nav i{color:#aeaeb1; padding:0 10px;}
+#footer .un { color:#737377; line-height: 20px; padding-top: 15px; border-top: 1px solid #59595a;}
+#footer .line{ position:absolute; top: -17px; left: 0; height: 2px; background: #fff; width: 47px;}
+#footer .un a{color:#737377;}
+#footer a:hover{ color:#fff;}
+#fot_tel{ position: absolute; right: 0; top: 0; color: #a4a4a7; font-size: 12px; padding-left: 15px; }
+#fot_tel strong{ color: #7fae53; font-weight:normal;}

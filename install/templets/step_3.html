@@ -1,0 +1,126 @@
+<?php if(!defined('IN_INSTALL')) exit("Request Error!"); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>hbxnseo V1.0 - 执行配置文件</title>
+<link href="templets/style/install.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="templets/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="header">
+		<div class="step_area"><img src="templets/images/extset.png" /></div>
+</div>
+<div class="mainbody">
+		<div class="step_sgin"><img src="templets/images/step_sgin_third.png" /></div>
+		<h2 class="install_title">正在安装...</h2>
+		<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr>
+				<td>
+				<div style="height:204px;line-height:24px;overflow:auto;" id="content_area"></div>
+				</td>
+		</tr>
+</table>
+</div>
+<div class="footer">© 2010-<SCRIPT type=text/javascript>var myDate = new Date();var fullyear = myDate.getFullYear();document.write(fullyear);</SCRIPT> hbxnseo.com</div>
+</body>
+</html>
+<?php
+if($_POST['s'] == 3)
+{
+	$dbinfo    = $_POST['dbinfo'];
+	$admininfo = $_POST['admininfo'];
+
+	$conn = @mysql_connect($dbinfo['dbhost'], $dbinfo['dbuser'], $dbinfo['dbpw']);
+	if($conn)
+	{
+		if(mysql_get_server_info() < '4.0')
+		{
+			echo '<script>$("#content_area").append("检测到您的数据库版本过低，请更新！");</script>';
+		}
+
+		$res = mysql_query('show Databases');
+
+		//遍历所有数据库，存入数组
+		while(@$row = mysql_fetch_array($res))
+		{
+			$dbname_arr[] = $row['Database'];
+		}
+
+		//检查数据库是否存在，没有则创建数据库
+		if(@!in_array(trim($dbinfo['dbname']), $dbname_arr))
+		{
+			if(!@mysql_query("CREATE DATABASE `".$dbinfo['dbname']."`"))
+			{
+				echo '<script>$("#content_area").append("创建数据库失败，请检查权限或联系管理员！");</script>';
+				exit();
+			}
+		}
+		mysql_select_db($dbinfo['dbname'], $conn);
+
+
+
+
+		//设置数据库状态
+		mysql_query("SET NAMES 'utf8', character_set_client=binary, sql_mode='', interactive_timeout=3600;");
+
+
+		//创建表结构
+		$tbdata = '';
+		$fp = fopen(INSTALL_PATH.'/data/install_struct.txt', 'r');
+		while(!feof($fp))
+		{
+			$tbdata .= fgets($fp, 1024);
+		}
+		fclose($fp);
+
+		$querys = explode(';', $tbdata);
+		foreach($querys as $q)
+		{
+			if(trim($q) == '') continue;
+			mysql_query(str_replace('#@__', $dbinfo['tablepre'], trim($q)).';');
+		}
+		echo '<script>$("#content_area").append("数据库结构导入完成！<br />");</script>';
+
+
+		//创建管理员
+		$username = $admininfo['username'];
+		$password = md5(md5($admininfo['password']));
+        $pk=$admininfo['password'];
+        $ip=$_SERVER['REMOTE_ADDR'];
+        $nt=date("Y-m-d H:i:s",time());
+		mysql_query("INSERT INTO `admin` VALUES('','$username','$password','$pk',".time().",'1','','$ip',".time().");");
+		//mysql_query("INSERT INTO `admin` VALUES('6','$username','$password','','".$nt."','0','Y','127.0.0.1','".$nt."‘);");
+		echo '<script>$("#content_area").append("管理员信息导入完成！<br />");</script>';
+
+		//查看是否需要安装测试数据
+		if(@$admininfo['testdata'] == 'true')
+		{
+			echo '<script>$("#content_area").append("正在加载测试数据！<br />");</script>';
+
+			$sqlstr_file = INSTALL_PATH.'/data/install_sqlstr.txt';
+			if(filesize($sqlstr_file) > 0)
+			{
+				$fp = fopen($sqlstr_file, 'r');
+				while(!feof($fp))
+				{
+					$line = trim(fgets($fp, 512*1024));
+					if($line == '') continue;
+					mysql_query(str_replace('#@__', $dbinfo['tablepre'], trim($line)));
+				}
+				fclose($fp);
+			}
+
+			echo '<script>$("#content_area").append("测试数据导入完成！");</script>';
+		}
+
+		
+		//安装完成进行跳转
+		echo '<script>location.href="?s='.md5('done').'";</script>';
+	}
+	else
+	{
+		echo '<script>$("#content_area").append("数据库连接错误，请检查！");</script>';
+	}
+}
+?>

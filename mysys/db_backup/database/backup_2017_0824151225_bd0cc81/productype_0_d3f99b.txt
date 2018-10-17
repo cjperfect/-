@@ -1,0 +1,6 @@
+INSERT INTO `productype` VALUES('4','花式编织呢','Fancy knitting','/admin/kindeditor/attached/image/20170815/20170815101713_29088.jpg');
+INSERT INTO `productype` VALUES('5','顺毛呢','Cisplatin wool','/admin/kindeditor/attached/image/20170815/20170815101725_68642.jpg');
+INSERT INTO `productype` VALUES('6','精纺','Worsted','/admin/kindeditor/attached/image/20170815/20170815101741_90417.jpg');
+INSERT INTO `productype` VALUES('1','大衣','Coat','/admin/kindeditor/attached/image/20170815/20170815101629_53948.jpg');
+INSERT INTO `productype` VALUES('2','纲花呢','Outline fancy suiting','/admin/kindeditor/attached/image/20170815/20170815101645_70976.jpg');
+INSERT INTO `productype` VALUES('3','格子呢','tartan','/admin/kindeditor/attached/image/20170815/20170815101659_96478.jpg');

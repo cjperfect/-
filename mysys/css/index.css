@@ -1,0 +1,38 @@
+*{padding:0px; margin:0px; font-family: "微软雅黑"}
+a{text-decoration: none;}
+/*=====================================头部==================================*/
+#header{width:100%; height: 70px; background: #509ee1;}
+#header .user{width:20%; margin-left: 2%; color: white; font-size: 24px; position: relative; float: left}
+#header .username{width:100%; text-align: center; line-height: 70px;}
+#header .username span{cursor: pointer}
+#header .history h4{ color:black; font-size: 16px; font-weight: bold; padding-bottom: 5px;}
+#header .history p{color:#272727; font-size: 13px; padding-bottom: 10px;}
+#header .history a:nth-child(5),
+#header .history a:nth-child(5),
+#header .history a:nth-child(6){color:blue; font-size: 12px; padding-bottom: 10px;}
+#header .history a:nth-child(5){float: left}
+#header .history a:nth-child(6){float: right}
+#header .top{float:right; line-height: 70px; padding-right: 20px; font-size: 14px;}
+#header .top a,#header .top span{color:white; margin-left: 20px;}
+/*=====================================container==================================*/
+#container .left{width:210px; height: 80%; position:absolute;top:70px;left:0px; background: #fafafa}
+#container .left iframe{width:100%;height: 80%;}
+#container .main{width:85%; height: 87%; position:absolute;top:70px; left:15%; background:white;}
+#container .main iframe{ width:100%;height: 100%;}
+/*=====================================main==================================*/
+.main h4,.main h3{position: absolute; left: 20px; color:white;}
+.main h4{ bottom:15px;}
+.main h3{bottom:50px;}
+.main table{width:100%; padding:10px 20px 0px 20px;}
+.main table tr:first-child{background:#EFEFEF;}
+.main table tr{text-align:center; }
+.main table tr td{height:40px; color:#666; font-size: 14px;border-bottom: 1px dashed #B5B5B5;}
+.main table tr td a{color:#666;}
+.main table tr td a:hover{color:red;}
+.main table tr td input[type='text']{width:300px;}
+.main table tr td input[type='submit']{width:60px; height:30px; background:#57b7e3; border:none; border-radius:5px; color:white;}
+h4{color:#000;font-size:14px;}
+h4 a{color:red;}
+.deta table tr td input[type='text']{width:200px;}
+.main center a{color:#666; font-size:14px;}
+.main center span{color:black; font-size:14px;}

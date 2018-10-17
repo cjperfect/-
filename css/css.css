@@ -1,0 +1,256 @@
+ #newlist{
+	width:100px;
+	height:50px;
+	float:right;
+	cursor:pointer;
+	text-align:center;
+	margin-top:0;
+	background:#ccc;
+	display:none;}
+#newlist span{
+	font-size:30px;
+	font-weight:none;
+	line-height:50px;}
+#newlist ul{display:none;}
+#newlist ul li{height:25px;background:#333;}
+#newlist ul li a{color:white;}
+#newlist:hover ul{display:block;}
+#newlist li:hover {background:#999;}
+
+
+.infobar{
+	width: 100%;
+    height: 320px;
+    padding-top: 80px;
+    color: #fff;
+    position:absolute;}
+.infobar div{
+	height:180px;
+	width:300px;
+	position:absolute;
+	bottom:0;
+	left:140px;}
+.infobar div ul{
+	width:300px;
+	height:100%;
+	margin-top:10px;
+	margin-left:50px;
+	}
+.infobar ul li{
+	position:relative;
+	z-index:10;}
+.infobar .etxt{font-size:24px;}
+.infobar .mtxt{
+	font-size:36px;
+	margin:20px 0;}
+.infobar .ftxt{font-size:18px;}	
+.infobar div ul  i{
+	display:block;
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0.5;
+	position:absolute;
+	left:0;
+	bottom:0;
+	transform:skew(-30deg,0);
+	z-index: 1;}
+
+#containner{
+	width:100%;
+	height:680px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:30px;
+	position:relative;}
+#containner .wrap{
+	width:1200px;
+	margin:0 auto;}	
+#containner #about_l{    
+	height: 620px;
+    width: 40%;
+	float:left;}
+#containner #about_l div{
+	background:#21ade8;
+	height:300px;
+	width:18%;
+	position:absolute;
+	left:25%;
+	top:50%;
+	color:white;
+	padding:20px;}
+#about_l div h4{
+	font-size:1.3em;
+	line-height:40px;
+	font-weight: 500;
+	display:block;
+	height:90px;}
+#about_l div h2{
+	font-size:4em;
+	font-weight: normal;
+	display:block;
+	height:100px;
+	padding:20px 0 10px 0;
+	border-bottom:solid 2px white;}	
+#about_l div h3{
+	font-size:26px;
+	font-weight: normal;
+	display:block;
+	height:50px;
+	width:55px;
+	float:left;
+	margin:20px 0;}
+#about_l div h5 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top:30px;}
+#about_r{
+	width:43%;
+	float:right;}
+#about_r h2{
+	height:200px;
+	line-height:200px;
+	font-size: 95px;
+    font-family: "华文细黑";
+    color: #eeebe9;}
+#about_r div{
+	height:90px;
+	color: #999;
+    border-bottom: 2px solid #21ade8;
+	margin-bottom:20px;
+	font-size: 12px;
+	line-height:2;}
+#about_r h4{    
+	font-size: 26px;
+    font-weight: normal;
+    color: #333;}
+#about_r span{
+	color: #444;
+    line-height:1.8;}    
+
+/*加入我们的页面的css样式*/
+
+
+.content{
+	width:1200px;
+	margin:60px auto;}
+.content .title	{
+	height:55px;
+	width:30%;
+	margin:0 auto;
+	margin-bottom:60px;}
+.content .title .title_l{
+
+	font-size:4em;
+	font-weight:500;
+	line-height:55px;
+	float:left;
+	color: #666;}
+.content .title .title_r h3{
+	display:block;width:800px;
+	font-size:1.8em;
+    font-weight:100;
+    line-height:32px;
+    color: #555;}
+.content .title .title_r span{
+	display:block;
+	width:400px;
+	font-size:1em;
+	font-weight: 100;
+	color: #888;}  
+.content_l{
+	width:45%;
+	float:left;
+	margin-bottom:50px;}
+.content_l h2{
+	font-size: 26px;
+    color: #333;
+    text-align:center;
+	font-weight: normal;
+	margin-bottom:20px;}	
+.content_l h4{
+	font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom:20px;}
+.content_l ul{
+	margin-bottom:70px;
+	margin-left:20%;}
+.content_l ul li.pton {
+    background: #f90;
+}	
+.content_l ul li{
+	height:30px;
+	width:150px;
+	margin-right:2px;
+	float:left;
+	text-align:center;
+	line-height:30px;
+	color: #fff;
+	background: #999
+	}
+.content .fls{
+	margin-left:100px;
+	font-size: 14px;
+    color: #333;
+    line-height: 28px
+	}
+.content .active{
+	background:orange;
+	}
+.content .text{
+	border-bottom: 1px dashed #d3d3d3;
+    margin: 20px 0;
+	}   
+.content p{
+	width:80%;
+	font-size: 14px;
+    color: #333;
+    line-height: 28px;
+}     	
+
+.content_r{
+	width:30%;
+	position:relative;
+	float:left;
+	margin-left:10%;
+	}
+.content_r img{
+	width:80px;
+	height:80px;
+	position:absolute;
+	}
+
+
+
+
+/*联系我们的css样式*/
+
+.contact_n {
+    width:1200px;
+    margin: 60px auto;}
+.contact_n .wap{
+	width:90%;}
+.contact_n dl{
+	width:25%;
+	height:180px;
+	float:left;
+	text-align:center;
+	color:#666666;
+	font-size:14px;
+	font-weight:none;
+	margin-bottom:60px;}
+
+.contact_n dl h2{
+	color:black;
+	font-size:16px;
+	line-height:40px;
+}	
+
+
+
+
+
+
+

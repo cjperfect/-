@@ -1,0 +1,7 @@
+INSERT INTO `detailtype` VALUES('1','2','公司简介','2017-07-23 21:00:00','','newsview-1.html');
+INSERT INTO `detailtype` VALUES('2','2','组织机构','2017-07-23 21:00:00','','newsview-2.html');
+INSERT INTO `detailtype` VALUES('3','2','企业文化','2017-07-23 21:00:00','','newsview-3.html');
+INSERT INTO `detailtype` VALUES('4','2','行业规范','2017-07-23 21:00:00','','newsview-4.html');
+INSERT INTO `detailtype` VALUES('5','3','公司新闻','2017-07-23 21:00:00','','');
+INSERT INTO `detailtype` VALUES('6','3','行业动态','2017-07-23 21:00:00','','');
+INSERT INTO `detailtype` VALUES('7','3','高端访谈','2017-07-23 21:00:00','','');

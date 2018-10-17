@@ -1,0 +1,12 @@
+INSERT INTO `link` VALUES('1','懒人图库','http://www.lanrentuku.com/js/daohang-590.html','2017-07-23 21:00:00','0','Y');
+INSERT INTO `link` VALUES('2','AJAX中国','http://www.okajax.com/','2017-07-23 21:00:00','0','Y');
+INSERT INTO `link` VALUES('3','阿里西西','http://www.shzqz.com/','2017-07-23 21:00:00','0','Y');
+INSERT INTO `link` VALUES('4','装修公司','http://www.shzqz.com/','2017-07-23 21:00:00','0','Y');
+INSERT INTO `link` VALUES('5','花都装修','http://www.folkvalley.com.cn/','2017-10-11 15:36:11','0','Y');
+INSERT INTO `link` VALUES('6','福屋网','http://www.wmyq8.com/','2017-10-11 15:36:53','0','Y');
+INSERT INTO `link` VALUES('7','春满人间装修','http://www.cmrj.cn/','2017-10-11 15:38:03','0','Y');
+INSERT INTO `link` VALUES('8','装修榜','http://www.cnmd.net/','2017-10-11 15:39:53','0','Y');
+INSERT INTO `link` VALUES('9','亚光亚装修','http://www.ygy.com.cn/','2017-10-11 15:40:50','0','Y');
+INSERT INTO `link` VALUES('10','中国门都网','http://www.chinamendu.com/','2017-10-11 15:41:40','0','Y');
+INSERT INTO `link` VALUES('11','一起装修网','http://www.17house.com/','2017-10-11 15:42:13','0','Y');
+INSERT INTO `link` VALUES('12','成都装修网','http://www.zhuang123.cn/','2017-10-11 16:03:17','0','Y');

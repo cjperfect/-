@@ -1,0 +1,9 @@
+最新版http://kindeditor.net/about.php在线文本编辑器，2016年版
+kindeditor-all.js
+kindeditor-min.js
+这二个文件完全一样
+
+attached文件夹中是系统默认上传文件夹，为PHP使用方便，上传文件夹改成了uploads。
+路径设置在PHP/file_manager_json.php和PHP/upload_json.php文件中设置
+定义允许上传的文件扩展名、最大文件大小在PHP/upload_json.php文件中设置
+

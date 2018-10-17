@@ -1,0 +1,204 @@
+﻿/*测试数据*/
+INSERT INTO `admin` VALUES('','hjf','ceacbd5a42020a3bbb627cff57507c06','hjf','2017-07-26','0','0','127.0.0.1','2017-07-14 10:56:04');
+
+INSERT INTO `focus` VALUES('1','大草原','/mysys/kindeditor/uploads/image/20170817/20170817105523_38135.jpg','','2017-08-17 18:55:25','Y','1');
+INSERT INTO `focus` VALUES('2','大草原','/mysys/kindeditor/uploads/image/20170818/20170818124524_80886.jpg','','2017-08-18 20:45:26','Y','1');
+
+
+
+INSERT INTO `newstype` VALUES('1','http://www.szjftex.com','本站首页','Home','2017-08-23 21:05:00','','Y','0');
+INSERT INTO `newstype` VALUES('2','infoview.php?id=1','公司概况','Profile','2017-08-23 21:07:31','','Y','0');
+INSERT INTO `newstype` VALUES('3','','新闻资讯','News','2017-07-23 21:09:00','','N','0');
+INSERT INTO `newstype` VALUES('4','photolist.php?typeid=1','公司产品','Product','2017-08-23 21:11:00','','Y','0');
+INSERT INTO `newstype` VALUES('5','','精英团队','Team','2017-07-23 23:00:00','','N','0');
+INSERT INTO `newstype` VALUES('6','','纺织知识','Textile','2017-07-23 22:23:00','','N','0');
+INSERT INTO `newstype` VALUES('7','','加入我们','Join','2017-87-23 22:00:45','','Y','0');
+INSERT INTO `newstype` VALUES('8','','联系我们','Contact','2017-07-23 22:11:00','','Y','0');
+
+
+
+INSERT INTO `detailtype` VALUES('1','2','公司简介','2017-7-23 21：15：42','','newsview-1.html');
+INSERT INTO `detailtype` VALUES('2','2','组织机构','2017-7-23 21：15：42','','newsview-2.html');
+INSERT INTO `detailtype` VALUES('3','2','企业文化','2017-7-23 21：15：42','','newsview-3.html');
+INSERT INTO `detailtype` VALUES('4','2','行业规范','2017-7-23 21：15：42','','newsview-4.html');
+INSERT INTO `detailtype` VALUES('5','3','公司新闻','2017-7-23 21：15：42','','');
+INSERT INTO `detailtype` VALUES('6','3','行业动态','2017-7-23 21：15：42','','');
+INSERT INTO `detailtype` VALUES('7','3','高端访谈','2017-7-23 21：15：42','','');
+
+
+INSERT INTO `user` VALUES('1','黄峻峰','0','2017-7-23 21：15：42','');
+INSERT INTO `user` VALUES('2','黄玺霖','1','2017-7-23 21：15：42','');
+INSERT INTO `user` VALUES('3','黄国华','1','2017-7-23 21：15：42','');
+
+
+INSERT INTO `link` VALUES('1','懒人图库','http://www.lanrentuku.com/js/daohang-590.html','2017-7-23 21：15：42','0','Y');
+INSERT INTO `link` VALUES('2','AJAX中国','http://www.okajax.com/','2017-7-23 21：15：42','0','Y');
+INSERT INTO `link` VALUES('3','阿里西西','http://www.shzqz.com/','2017-7-23 21：15：42','0','Y');
+INSERT INTO `link` VALUES('4','装修公司','http://www.shzqz.com/','2017-7-23 21：15：42','0','Y');
+INSERT INTO `link` VALUES('5','花都装修','http://www.folkvalley.com.cn/','2017-10-11 15:36:11','0','Y');
+INSERT INTO `link` VALUES('6','福屋网','http://www.wmyq8.com/','2017-10-11 15:36:53','0','Y');
+INSERT INTO `link` VALUES('7','春满人间装修','http://www.cmrj.cn/','2017-10-11 15:38:03','0','Y');
+INSERT INTO `link` VALUES('8','装修榜','http://www.cnmd.net/','2017-10-11 15:39:53','0','Y');
+INSERT INTO `link` VALUES('9','亚光亚装修','http://www.ygy.com.cn/','2017-10-11 15:40:50','0','Y');
+INSERT INTO `link` VALUES('10','中国门都网','http://www.chinamendu.com/','2017-10-11 15:41:40','0','Y');
+INSERT INTO `link` VALUES('11','一起装修网','http://www.17house.com/','2017-10-11 15:42:13','0','Y');
+INSERT INTO `link` VALUES('12','成都装修网','http://www.zhuang123.cn/','2017-10-11 16:03:17','0','Y');
+
+
+INSERT INTO `caselist` VALUES('1','案例1','2017-7-23 21：15：42','uploads/news/p1.jpg','','');
+INSERT INTO `caselist` VALUES('2','案例2','2017-7-23 21：15：42','uploads/news/p2.jpg','','');
+INSERT INTO `caselist` VALUES('3','案例3','2017-7-23 21：15：42','uploads/news/p3.jpg','','');
+INSERT INTO `caselist` VALUES('4','案例4','2017-7-23 21：15：42','uploads/news/p4.jpg','','');
+INSERT INTO `caselist` VALUES('5','案例5','2017-7-23 21：15：42','uploads/news/p5.jpg','','');
+INSERT INTO `caselist` VALUES('6','案例6','2017-7-23 21：15：42','uploads/news/p6.jpg','','');
+INSERT INTO `caselist` VALUES('7','案例7','2017-7-23 21：15：42','uploads/news/p7.jpg','','');
+INSERT INTO `caselist` VALUES('8','案例8','2017-7-23 21：15：42','uploads/news/p8.jpg','','');
+INSERT INTO `caselist` VALUES('9','案例9','2017-7-23 21：15：42','uploads/news/p9.jpg','','');
+INSERT INTO `caselist` VALUES('10','案例10','2017-7-23 21：15：42','uploads/news/p10.jpg','','');
+INSERT INTO `caselist` VALUES('11','案例11','2017-7-23 21：15：42','uploads/news/p11.jpg','','');
+INSERT INTO `caselist` VALUES('12','案例12','2017-7-23 21：15：42','uploads/news/p12.jpg','','');
+
+INSERT INTO `news` VALUES('1','深圳金帆纺织测试文章标题1','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容1','127.0.0.1');
+INSERT INTO `news` VALUES('2','深圳金帆纺织测试文章标题2','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容2','127.0.0.1');
+INSERT INTO `news` VALUES('3','深圳金帆纺织测试文章标题3','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容3','127.0.0.1');
+INSERT INTO `news` VALUES('4','深圳金帆纺织测试文章标题4','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容4','127.0.0.1');
+INSERT INTO `news` VALUES('5','深圳金帆纺织测试文章标题5','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容5','127.0.0.1');
+INSERT INTO `news` VALUES('6','深圳金帆纺织测试文章标题6','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容6','127.0.0.1');
+INSERT INTO `news` VALUES('7','深圳金帆纺织测试文章标题7','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容7','127.0.0.1');
+INSERT INTO `news` VALUES('8','深圳金帆纺织测试文章标题8','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容8','127.0.0.1');
+INSERT INTO `news` VALUES('9','深圳金帆纺织测试文章标题9','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容9','127.0.0.1');
+INSERT INTO `news` VALUES('10','深圳金帆纺织测试文章标题10','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容10','127.0.0.1');
+I
+INSERT INTO `news` VALUES('11','深圳金帆纺织测试文章标题13','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容1','127.0.0.1');
+INSERT INTO `news` VALUES('12','深圳金帆纺织测试文章标题14','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容2','127.0.0.1');
+INSERT INTO `news` VALUES('13','深圳金帆纺织测试文章标题15','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容3','127.0.0.1');
+INSERT INTO `news` VALUES('14','深圳金帆纺织测试文章标题4','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容4','127.0.0.1');
+INSERT INTO `news` VALUES('15','深圳金帆纺织测试文章标题5','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容5','127.0.0.1');
+INSERT INTO `news` VALUES('16','深圳金帆纺织测试文章标题6','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容6','127.0.0.1');
+INSERT INTO `news` VALUES('17','深圳金帆纺织测试文章标题7','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容7','127.0.0.1');
+INSERT INTO `news` VALUES('18','深圳金帆纺织测试文章标题8','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容8','127.0.0.1');
+INSERT INTO `news` VALUES('19','深圳金帆纺织测试文章标题9','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容9','127.0.0.1');
+INSERT INTO `news` VALUES('20','深圳金帆纺织测试文章标题10','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容10','127.0.0.1');
+INSERT INTO `news` VALUES('21','深圳金帆纺织测试文章标题11','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容11','127.0.0.1');
+INSERT INTO `news` VALUES('22','深圳金帆纺织测试文章标题12','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容12','127.0.0.1');
+NSERT INTO `news` VALUES('23','深圳金帆纺织测试文章标题11','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容11','127.0.0.1');
+INSERT INTO `news` VALUES('24','深圳金帆纺织测试文章标题12','412','无','3','5','2017-08-11 11:05:31','2017-08-11 09:32:07','星想互联','hjf','N','1','images\\1.jpg','N','N','N','','N','','','深圳金帆纺织测试文章内容12','127.0.0.1');
+
+
+
+
+
+INSERT INTO `phototype` VALUES('1','大衣');
+INSERT INTO `phototype` VALUES('2','纲花呢');
+INSERT INTO `phototype` VALUES('3','格子呢');
+INSERT INTO `phototype` VALUES('4','花式编织呢');
+INSERT INTO `phototype` VALUES('5','顺毛呢');
+INSERT INTO `phototype` VALUES('6','精纺');
+
+
+
+INSERT INTO `photo` VALUES('1','金帆纺织图片测试标题1','0','1','2017-07-23 16:36:34','','/mysys/kindeditor/uploads/image/20170723/20170723094207_32384.jpg','金帆纺织图片测试内容1');
+INSERT INTO `photo` VALUES('2','金帆纺织图片测试标题2','0','1','2017-07-23 16:46:29','','/mysys/kindeditor/uploads/image/20170723/20170723094152_89041.jpg','金帆纺织图片测试内容2');
+INSERT INTO `photo` VALUES('3','金帆纺织图片测试标题3','0','1','2017-07-23 16:47:23','','/mysys/kindeditor/uploads/image/20170723/20170723094133_51596.jpg','金帆纺织图片测试内容3');
+INSERT INTO `photo` VALUES('4','金帆纺织图片测试标题4','0','1','2017-07-23 18:02:20','','/mysys/kindeditor/uploads/image/20170723/20170723100214_90395.jpg','金帆纺织图片测试标题4');
+INSERT INTO `photo` VALUES('5','金帆纺织图片测试标题5','0','2','2017-07-23 18:02:49','','/mysys/kindeditor/uploads/image/20170723/20170723100245_78389.jpg','金帆纺织图片测试标题2');
+INSERT INTO `photo` VALUES('6','金帆纺织图片测试标题6','0','2','2017-07-23 18:03:13','','/mysys/kindeditor/uploads/image/20170723/20170723100311_72828.jpg','金帆纺织图片测试标题2');
+INSERT INTO `photo` VALUES('7','金帆纺织图片测试标题1','0','1','2017-07-23 16:36:34','','/mysys/kindeditor/uploads/image/20170723/20170723094207_32384.jpg','金帆纺织图片测试内容1');
+INSERT INTO `photo` VALUES('8','金帆纺织图片测试标题2','0','1','2017-07-23 16:46:29','','/mysys/kindeditor/uploads/image/20170723/20170723094152_89041.jpg','金帆纺织图片测试内容2');
+INSERT INTO `photo` VALUES('9','金帆纺织图片测试标题3','0','1','2017-07-23 16:47:23','','/mysys/kindeditor/uploads/image/20170723/20170723094133_51596.jpg','金帆纺织图片测试内容3');
+INSERT INTO `photo` VALUES('10','金帆纺织图片测试标题4','0','1','2017-07-23 18:02:20','','/mysys/kindeditor/uploads/image/20170723/20170723100214_90395.jpg','金帆纺织图片测试标题4');
+INSERT INTO `photo` VALUES('11','金帆纺织图片测试标题1','0','1','2017-07-23 16:36:34','','/mysys/kindeditor/uploads/image/20170723/20170723094207_32384.jpg','金帆纺织图片测试内容1');
+INSERT INTO `photo` VALUES('12','金帆纺织图片测试标题2','0','1','2017-07-23 16:46:29','','/mysys/kindeditor/uploads/image/20170723/20170723094152_89041.jpg','金帆纺织图片测试内容2');
+INSERT INTO `photo` VALUES('13','金帆纺织图片测试标题3','0','1','2017-07-23 16:47:23','','/mysys/kindeditor/uploads/image/20170723/20170723094133_51596.jpg','金帆纺织图片测试内容3');
+INSERT INTO `photo` VALUES('14','金帆纺织图片测试标题4','0','1','2017-07-23 18:02:20','','/mysys/kindeditor/uploads/image/20170723/20170723100214_90395.jpg','金帆纺织图片测试标题4');
+
+
+INSERT INTO `productype` VALUES('1','大衣','Coat','/mysys/kindeditor/uploads/image/20170815/20170815101629_53948.jpg');
+INSERT INTO `productype` VALUES('2','纲花呢','Outline fancy suiting','/mysys/kindeditor/uploads/image/20170815/20170815101645_70976.jpg');
+INSERT INTO `productype` VALUES('3','格子呢','tartan','/mysys/kindeditor/uploads/image/20170815/20170815101659_96478.jpg');
+INSERT INTO `productype` VALUES('4','花式编织呢','Fancy knitting','/mysys/kindeditor/uploads/image/20170815/20170815101713_29088.jpg');
+INSERT INTO `productype` VALUES('5','顺毛呢','Cisplatin wool','/mysys/kindeditor/uploads/image/20170815/20170815101725_68642.jpg');
+INSERT INTO `productype` VALUES('6','精纺','Worsted','/mysys/kindeditor/uploads/image/20170815/20170815101741_90417.jpg');
+
+
+INSERT INTO `product` VALUES('1','格子呢A002','0','3','2017-07-23 16:36:34','','/mysys/kindeditor/uploads/image/20170816/20170816091154_54305.jpg','格子呢A002');
+INSERT INTO `product` VALUES('2','纲花呢A009','0','2','2017-07-23 16:46:29','','/mysys/kindeditor/uploads/image/20170816/20170816090154_65082.jpg','纲花呢A009');
+INSERT INTO `product` VALUES('3','纲花呢A006','0','2','2017-07-23 16:47:23','','/mysys/kindeditor/uploads/image/20170816/20170816085955_56222.jpg','纲花呢A006');
+INSERT INTO `product` VALUES('4','纲花呢A003','0','2','2017-07-23 18:02:20','','/mysys/kindeditor/uploads/image/20170816/20170816085750_61355.jpg','纲花呢A003');
+INSERT INTO `product` VALUES('5','纲花呢A002','0','2','2017-07-23 18:02:49','','/mysys/kindeditor/uploads/image/20170816/20170816085714_36336.jpg','纲花呢A002');
+INSERT INTO `product` VALUES('6','纲花呢A001','0','2','2017-07-23 18:03:13','','/mysys/kindeditor/uploads/image/20170816/20170816085638_69534.jpg','纲花呢A001');
+INSERT INTO `product` VALUES('7','格子呢A003','0','3','2017-07-23 16:36:34','','/mysys/kindeditor/uploads/image/20170816/20170816091237_87695.jpg','格子呢A003');
+INSERT INTO `product` VALUES('8','纲花呢A0010','0','2','2017-07-23 16:46:29','','/mysys/kindeditor/uploads/image/20170816/20170816090250_19327.jpg','纲花呢A0010');
+INSERT INTO `product` VALUES('9','纲花呢A007','0','2','2017-07-23 16:47:23','','/mysys/kindeditor/uploads/image/20170816/20170816090023_35271.jpg','纲花呢A007');
+INSERT INTO `product` VALUES('10','纲花呢A004','0','2','2017-07-23 18:02:20','','/mysys/kindeditor/uploads/image/20170816/20170816085822_70103.jpg','纲花呢A004');
+INSERT INTO `product` VALUES('11','格子呢A004','0','3','2017-07-23 16:36:34','','/mysys/kindeditor/uploads/image/20170816/20170816091307_52695.jpg','格子呢A004');
+INSERT INTO `product` VALUES('12','格子呢A001','0','3','2017-07-23 16:46:29','','/mysys/kindeditor/uploads/image/20170816/20170816091053_57598.jpg','格子呢A001');
+INSERT INTO `product` VALUES('13','纲花呢A008','0','2','2017-07-23 16:47:23','','/mysys/kindeditor/uploads/image/20170816/20170816090106_85822.jpg','纲花呢A008');
+INSERT INTO `product` VALUES('14','纲花呢A005','0','2','2017-07-23 18:02:20','','/mysys/kindeditor/uploads/image/20170816/20170816085905_20964.jpg','纲花呢A005');
+INSERT INTO `product` VALUES('15','格子呢A005','0','3','2017-08-16 17:16:02','','/mysys/kindeditor/uploads/image/20170816/20170816091554_78398.jpg','格子呢A004');
+INSERT INTO `product` VALUES('16','格子呢A006','0','3','2017-08-16 17:21:24','','/mysys/kindeditor/uploads/image/20170816/20170816092121_83822.jpg','格子呢A006');
+INSERT INTO `product` VALUES('17','格子呢A007','0','3','2017-08-16 17:26:05','','/mysys/kindeditor/uploads/image/20170816/20170816092602_19967.jpg','格子呢A007');
+INSERT INTO `product` VALUES('18','格子呢A008','0','3','2017-08-16 17:26:40','','/mysys/kindeditor/uploads/image/20170816/20170816092636_88316.jpg','格子呢A008');
+INSERT INTO `product` VALUES('19','格子呢A009','0','3','2017-08-16 17:27:04','','/mysys/kindeditor/uploads/image/20170816/20170816092701_53209.jpg','格子呢A009');
+INSERT INTO `product` VALUES('20','格子呢A010','0','3','2017-08-16 17:27:27','','/mysys/kindeditor/uploads/image/20170816/20170816092725_95042.jpg','格子呢A010');
+INSERT INTO `product` VALUES('21','格子呢A011','0','3','2017-08-16 17:30:22','','/mysys/kindeditor/uploads/image/20170816/20170816093020_50561.jpg','格子呢A011');
+INSERT INTO `product` VALUES('22','花式编织呢A001','0','4','2017-08-16 17:33:01','','/mysys/kindeditor/uploads/image/20170816/20170816093258_45587.jpg','花式针织呢A001');
+INSERT INTO `product` VALUES('23','花式编织呢A002','0','4','2017-08-16 17:33:05','','/mysys/kindeditor/uploads/image/20170816/20170816093948_49630.jpg','花式针织呢A002');
+INSERT INTO `product` VALUES('24','花式编织呢A003','0','4','2017-08-16 17:33:09','','/mysys/kindeditor/uploads/image/20170816/20170816094003_14092.jpg','花式针织呢A003');
+INSERT INTO `product` VALUES('25','花式编织呢A004','1','4','2017-08-16 17:33:14','','/mysys/kindeditor/uploads/image/20170816/20170816100005_62929.jpg','花式针织呢A004');
+INSERT INTO `product` VALUES('26','花式编织呢A005','1','4','2017-08-16 17:33:17','','/mysys/kindeditor/uploads/image/20170816/20170816100020_77115.jpg','花式针织呢A005');
+INSERT INTO `product` VALUES('27','花式编织呢A006','1','4','2017-08-16 17:33:25','','/mysys/kindeditor/uploads/image/20170816/20170816095112_59954.jpg','花式针织呢A006');
+INSERT INTO `product` VALUES('28','花式编织呢A007','1','4','2017-08-16 17:33:28','','/mysys/kindeditor/uploads/image/20170816/20170816095100_45329.jpg','花式针织呢A007');
+INSERT INTO `product` VALUES('29','花式编织呢A008','1','4','2017-08-16 17:33:35','','/mysys/kindeditor/uploads/image/20170816/20170816095049_65101.jpg','花式针织呢A008');
+INSERT INTO `product` VALUES('30','花式编织呢A009','1','4','2017-08-16 17:33:41','','/mysys/kindeditor/uploads/image/20170816/20170816095033_98135.jpg','花式针织呢A009');
+INSERT INTO `product` VALUES('31','花式编织呢A010','1','4','2017-08-16 17:33:55','','/mysys/kindeditor/uploads/image/20170816/20170816095018_74404.jpg','花式针织呢A010');
+INSERT INTO `product` VALUES('32','花式编织呢A011','1','4','2017-08-16 17:34:01','','/mysys/kindeditor/uploads/image/20170816/20170816095003_64580.jpg','花式针织呢A011');
+INSERT INTO `product` VALUES('33','花式编织呢A012','1','4','2017-08-16 17:34:09','','/mysys/kindeditor/uploads/image/20170816/20170816094952_37166.jpg','花式针织呢A012');
+INSERT INTO `product` VALUES('34','花式编织呢A013','0','4','2017-08-16 17:35:23','','/mysys/kindeditor/uploads/image/20170816/20170816094520_52802.jpg','花式针织呢A013');
+INSERT INTO `product` VALUES('35','顺毛呢A001','1','5','2017-08-16 08:12:36','','/mysys/kindeditor/uploads/image/20170816/20170816101253_21068.jpg','顺毛呢A001');
+INSERT INTO `product` VALUES('36','顺毛呢A002','1','5','2017-08-16 08:13:17','','/mysys/kindeditor/uploads/image/20170816/20170816101326_60710.jpg','顺毛呢A002');
+INSERT INTO `product` VALUES('37','顺毛呢A003','1','5','2017-08-16 08:20:35','','/mysys/kindeditor/uploads/image/20170816/20170816102043_71468.jpg','顺毛呢A003');
+INSERT INTO `product` VALUES('38','顺毛呢A004','1','5','2017-08-16 08:20:59','','/mysys/kindeditor/uploads/image/20170816/20170816102106_67098.jpg','顺毛呢A004');
+INSERT INTO `product` VALUES('39','顺毛呢A005','1','5','2017-08-16 08:23:20','','/mysys/kindeditor/uploads/image/20170816/20170816102327_55604.jpg','顺毛呢A005');
+INSERT INTO `product` VALUES('40','顺毛呢A006','1','5','2017-08-16 08:23:04','','/mysys/kindeditor/uploads/image/20170816/20170816102313_44670.jpg','顺毛呢A006');
+INSERT INTO `product` VALUES('41','顺毛呢A007','1','5','2017-08-16 08:22:51','','/mysys/kindeditor/uploads/image/20170816/20170816102257_72286.jpg','顺毛呢A007');
+INSERT INTO `product` VALUES('42','顺毛呢A008','1','5','2017-08-16 08:22:34','','/mysys/kindeditor/uploads/image/20170816/20170816102242_63220.jpg','顺毛呢A008');
+INSERT INTO `product` VALUES('43','顺毛呢A009','1','5','2017-08-16 08:22:18','','/mysys/kindeditor/uploads/image/20170816/20170816102227_98835.jpg','顺毛呢A009');
+INSERT INTO `product` VALUES('44','顺毛呢A010','1','5','2017-08-16 08:22:05','','/mysys/kindeditor/uploads/image/20170816/20170816102212_32274.jpg','顺毛呢A010');
+INSERT INTO `product` VALUES('45','顺毛呢A011','1','5','2017-08-16 08:21:48','','/mysys/kindeditor/uploads/image/20170816/20170816102157_77612.jpg','顺毛呢A011');
+INSERT INTO `product` VALUES('46','顺毛呢A012','1','5','2017-08-16 08:21:34','','/mysys/kindeditor/uploads/image/20170816/20170816102141_60083.jpg','顺毛呢A012');
+INSERT INTO `product` VALUES('47','顺毛呢A013','1','5','2017-08-16 08:21:16','','/mysys/kindeditor/uploads/image/20170816/20170816102123_84382.jpg','顺毛呢A013');
+INSERT INTO `product` VALUES('48','高档精纺A001','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816103801_41368.jpg','高档精纺A001');
+INSERT INTO `product` VALUES('49','高档精纺A002','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816103815_27108.jpg','高档精纺A002');
+INSERT INTO `product` VALUES('50','高档精纺A003','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816105944_13565.jpg','高档精纺A003');
+INSERT INTO `product` VALUES('51','高档精纺A004','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816105957_69685.jpg','高档精纺A004');
+INSERT INTO `product` VALUES('52','高档精纺A005','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110011_99208.jpg','高档精纺A005');
+INSERT INTO `product` VALUES('53','高档精纺A006','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110025_90447.jpg','高档精纺A006');
+INSERT INTO `product` VALUES('54','高档精纺A007','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110042_92685.jpg','高档精纺A007');
+INSERT INTO `product` VALUES('55','高档精纺A008','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110054_77758.jpg','高档精纺A008');
+INSERT INTO `product` VALUES('56','高档精纺A009','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110111_46109.jpg','高档精纺A009');
+INSERT INTO `product` VALUES('57','高档精纺A010','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110126_74860.jpg','高档精纺A010');
+INSERT INTO `product` VALUES('58','高档精纺A011','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110336_52758.jpg','高档精纺A011');
+INSERT INTO `product` VALUES('59','高档精纺A012','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110253_24466.jpg','高档精纺A012');
+INSERT INTO `product` VALUES('60','高档精纺A013','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110214_60603.jpg','高档精纺A013');
+INSERT INTO `product` VALUES('61','高档精纺A014','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110157_67889.jpg','高档精纺A014');
+INSERT INTO `product` VALUES('62','高档精纺A015','1','6','2017-08-16 19:28:19','','/mysys/kindeditor/uploads/image/20170816/20170816110141_38861.jpg','高档精纺A015');
+
+
+INSERT INTO `infotype` VALUES('1','关于我们','','','');
+
+INSERT INTO `info` VALUES('1','深圳市金帆纺织有限公司简介','<p>\r\n	深圳市金帆纺织有限公司是一家集生产、开发、销售、流行资讯全方位服务为一体的现代化纺织面料公司。拥有生产高档纺织品面料的现代化设备。企业技术力量雄厚，有专门的时装面料研发团队，面料专业性强，并有纺织技术专家把关。\r\n</p>\r\n<p>\r\n	公司目前与国内众多知名品牌及外贸公司建立了稳定的合作关系。公司自成立以来，一直本着“以质量求生存，以信誉求发展；为客户 创造价值，为员工谋求福利”的经营宗旨，凭借着对客户需求的持续关注和快速反应，以高品质、新颖独特的产品、富有竞争力的价格优势，越来越受到广大客户的关注和好评。\r\n</p>\r\n<p>\r\n	我们长期专注为国内高档品牌女装生产企业提供精细产品的个性服务，热忱欢迎海内外客户真城合作，愿以更宽广的胸怀与新老伙伴共创事业。&nbsp;&nbsp;\r\n</p>\r\n<br />','1','0','2017-08-17 17:21:33','0','','2017-08-14','','','','0','','','','','','','','','');
+
+
+
+INSERT INTO `webconfig` VALUES('cfg_webname','深圳金帆纺织','0','string','深圳金帆纺织','1');
+INSERT INTO `webconfig` VALUES('cfg_weburl','网站地址','0','string','http://www.szjftex.com/','2');
+INSERT INTO `webconfig` VALUES('cfg_webpath','网站目录','0','string','网站目录','3');
+INSERT INTO `webconfig` VALUES('cfg_author','技术支持','0','string','星想互联','4');
+INSERT INTO `webconfig` VALUES('cfg_generator','程序引擎','0','string','hbxnseo CMS','5');
+INSERT INTO `webconfig` VALUES('cfg_keyword','关键字','0','string','深圳金帆纺织','6');
+INSERT INTO `webconfig` VALUES('cfg_description','网站描述','0','bstring','深圳金帆纺织','7');
+INSERT INTO `webconfig` VALUES('cfg_tel','联系电话','0','string','086 - 0755-83207510','8');
+INSERT INTO `webconfig` VALUES('cfg_fax','公司传真','0','string','086 - 0755-83207512','9');
+INSERT INTO `webconfig` VALUES('cfg_email','公司邮箱','0','string','zc413zc@163.com','10');
+INSERT INTO `webconfig` VALUES('cfg_address','公司地址','0','string','深圳市福田区上梅林梅华路梅华一号四楼','11');

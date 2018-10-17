@@ -1,0 +1,14 @@
+INSERT INTO `photo` VALUES('1','金帆纺织图片测试标题1','0','1','2017-07-23 16:36:34','','/admin/kindeditor/attached/image/20170723/20170723094207_32384.jpg','金帆纺织图片测试内容1');
+INSERT INTO `photo` VALUES('2','金帆纺织图片测试标题2','0','1','2017-07-23 16:46:29','','/admin/kindeditor/attached/image/20170723/20170723094152_89041.jpg','金帆纺织图片测试内容2');
+INSERT INTO `photo` VALUES('3','金帆纺织图片测试标题3','0','1','2017-07-23 16:47:23','','/admin/kindeditor/attached/image/20170723/20170723094133_51596.jpg','金帆纺织图片测试内容3');
+INSERT INTO `photo` VALUES('4','金帆纺织图片测试标题4','0','1','2017-07-23 18:02:20','','/admin/kindeditor/attached/image/20170723/20170723100214_90395.jpg','金帆纺织图片测试标题4');
+INSERT INTO `photo` VALUES('5','金帆纺织图片测试标题5','0','2','2017-07-23 18:02:49','','/admin/kindeditor/attached/image/20170723/20170723100245_78389.jpg','金帆纺织图片测试标题2');
+INSERT INTO `photo` VALUES('6','金帆纺织图片测试标题6','0','2','2017-07-23 18:03:13','','/admin/kindeditor/attached/image/20170723/20170723100311_72828.jpg','金帆纺织图片测试标题2');
+INSERT INTO `photo` VALUES('7','金帆纺织图片测试标题1','0','1','2017-07-23 16:36:34','','/admin/kindeditor/attached/image/20170723/20170723094207_32384.jpg','金帆纺织图片测试内容1');
+INSERT INTO `photo` VALUES('8','金帆纺织图片测试标题2','0','1','2017-07-23 16:46:29','','/admin/kindeditor/attached/image/20170723/20170723094152_89041.jpg','金帆纺织图片测试内容2');
+INSERT INTO `photo` VALUES('9','金帆纺织图片测试标题3','0','1','2017-07-23 16:47:23','','/admin/kindeditor/attached/image/20170723/20170723094133_51596.jpg','金帆纺织图片测试内容3');
+INSERT INTO `photo` VALUES('10','金帆纺织图片测试标题4','0','1','2017-07-23 18:02:20','','/admin/kindeditor/attached/image/20170723/20170723100214_90395.jpg','金帆纺织图片测试标题4');
+INSERT INTO `photo` VALUES('11','金帆纺织图片测试标题1','0','1','2017-07-23 16:36:34','','/admin/kindeditor/attached/image/20170723/20170723094207_32384.jpg','金帆纺织图片测试内容1');
+INSERT INTO `photo` VALUES('12','金帆纺织图片测试标题2','0','1','2017-07-23 16:46:29','','/admin/kindeditor/attached/image/20170723/20170723094152_89041.jpg','金帆纺织图片测试内容2');
+INSERT INTO `photo` VALUES('13','金帆纺织图片测试标题3','0','1','2017-07-23 16:47:23','','/admin/kindeditor/attached/image/20170723/20170723094133_51596.jpg','金帆纺织图片测试内容3');
+INSERT INTO `photo` VALUES('14','金帆纺织图片测试标题4','0','1','2017-07-23 18:02:20','','/admin/kindeditor/attached/image/20170723/20170723100214_90395.jpg','金帆纺织图片测试标题4');

@@ -1,0 +1,6 @@
+INSERT INTO `phototype` VALUES('1','大衣');
+INSERT INTO `phototype` VALUES('2','纲花呢');
+INSERT INTO `phototype` VALUES('3','格子呢');
+INSERT INTO `phototype` VALUES('4','花式编织呢');
+INSERT INTO `phototype` VALUES('5','顺毛呢');
+INSERT INTO `phototype` VALUES('6','精纺');

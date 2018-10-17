@@ -1,0 +1,8 @@
+INSERT INTO `newstype` VALUES('1','http://www.szjftex.com','本站首页','Home page','2017-07-23 21:00:00','','Y','0');
+INSERT INTO `newstype` VALUES('2','infoview.php?id=1','公司概况','Company profile','2017-07-23 21:00:00','','Y','0');
+INSERT INTO `newstype` VALUES('3','','新闻资讯','News information','2017-07-23 21:00:00','','N','0');
+INSERT INTO `newstype` VALUES('4','photolist.php?typeid=1','公司产品','Company product','2017-07-23 21:00:00','','Y','0');
+INSERT INTO `newstype` VALUES('5','','精英团队','Elite team','2017-07-23 21:00:00','','N','0');
+INSERT INTO `newstype` VALUES('6','','纺织知识','Textile knowledge','2017-07-23 21:00:00','','N','0');
+INSERT INTO `newstype` VALUES('7','','加入我们','Join us','2017-07-23 21:00:00','','Y','0');
+INSERT INTO `newstype` VALUES('8','','联系我们','Contact us','2017-07-23 21:00:00','','Y','0');
